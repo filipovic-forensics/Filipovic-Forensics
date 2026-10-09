@@ -322,6 +322,12 @@ background:#F6F0E5!important;
 #about p+p{margin-top:0!important}
 </style>
 
+<style id="about-portrait-layout">
+#about .about-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:clamp(28px,5vw,72px);align-items:start}
+#about .about-portrait-wrap{min-width:0;align-self:start}
+#about .about-portrait{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:3px}
+@media(max-width:900px){#about .about-grid{grid-template-columns:1fr}#about .about-portrait-wrap{max-width:580px}#about .about-portrait{aspect-ratio:4/3}}
+</style>
 </head>
 <body>
 <header class="header"><a class="brand" href="#">FILIPOVIC FORENSICS</a>
@@ -332,8 +338,8 @@ background:#F6F0E5!important;
 <p>Dr. Filipovic speaks 7 languages and has operational proficiency in another 5, with accompanying multi-cultural knowledge base and competence. Both language and culture contrasts are very often relevant in forensic and legal analysis. Check out <a href="https://www.researchgate.net/profile/Luna-Filipovic" target="_blank" rel="noopener">Dr. Filipovic's research</a> to see exactly how and why.</p>
 <p>CV and detailed endorsements of Dr. Filipovic&#39;s work by the UK &amp; US police and attorney clients are available upon request. Please send your requests using the <a href="../index.html#contact"><span class="small-caps-contact">contact</span> tab</a>.</p>
 </div>
-
-
+<div class="about-portrait-wrap"><img class="about-portrait" src="../about-portrait.png" alt="Dr Luna Filipovic in a professional study" loading="lazy"></div>
+</div>
 <div class="filipovic-brief-label">Filipovic in Brief:</div>
 <div class="about-credential-grid">
   <div class="about-credential-card">
